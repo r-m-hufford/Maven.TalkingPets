@@ -20,12 +20,13 @@ public class MainApplicationTest {
         mainApp.addPet(fish);
 
         Integer expected = 3;
-        Integer actual = this.pets.size();
+        Integer actual = mainApp.pets.size();
 
         Assert.assertEquals(expected,actual);
     }
 
     ///////// NOT SURE IF THIS ONE WILL WORK. MORE OF AN EXPERIMENT REALLY ///////////
+    @Test
     public void addPetTest2() {
         MainApplication mainApp = new MainApplication();
 
@@ -39,7 +40,7 @@ public class MainApplicationTest {
         mainApp.addPet(fish);
 
         String expected = "airbud";
-        String actual = pets.get(2).getName();
+        String actual = mainApp.pets.get(1).name;
 
         Assert.assertEquals(expected,actual);
     }

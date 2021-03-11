@@ -16,8 +16,8 @@ public class CatTest{
 
     @Test
     public void setNameTest() {
-        Cat = new Cat("titus");
-        cat.setNameTest("burrito"); ////actual name of a friend's cat
+        Cat cat= new Cat("titus");
+        cat.setName("burrito"); ////actual name of a friend's cat
 
         String expected = "burrito";
         String actual = cat.getName();
@@ -27,7 +27,7 @@ public class CatTest{
 
 
     @Test
-    public void speakTest() {
+    public void speakTest1() {
         Cat cat = new Cat("cat");
 
         String expected = "meow!";
@@ -38,7 +38,7 @@ public class CatTest{
 
 
     @Test
-    public void speakTest() {
+    public void speakTest2() {
         Cat cat = new Cat("cat");
         cat.setSpeak("hiss");
 

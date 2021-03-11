@@ -18,7 +18,7 @@ public class DogTest{
     @Test
     public void setNameTest() {
         Dog dog = new Dog("balto");
-        dog.setNameTest("airbud");
+        dog.setName("airbud");
 
         String expected = "airbud";
         String actual = dog.getName();
@@ -28,7 +28,7 @@ public class DogTest{
 
 
     @Test
-    public void speakTest() {
+    public void speakTest1() {
         Dog dog = new Dog("airbud");
 
         String expected = "woof!";
@@ -39,7 +39,7 @@ public class DogTest{
 
 
     @Test
-    public void speakTest() {
+    public void speakTest2() {
         Dog dog = new Dog("wishbone");
         dog.setSpeak("bark");
 

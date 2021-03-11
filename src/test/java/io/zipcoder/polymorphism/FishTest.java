@@ -18,9 +18,9 @@ public class FishTest{
     @Test
     public void setNameTest() {
         Fish fish = new Fish("goldie");
-        fish.setNameTest("fish");
+        fish.setName("fish");
 
-        String expected = "Airbud";
+        String expected = "fish";
         String actual = fish.getName();
 
         Assert.assertEquals(expected, actual);
@@ -28,7 +28,7 @@ public class FishTest{
 
 
     @Test
-    public void speakTest() {
+    public void speakTest1() {
         Fish fish = new Fish("fish");
 
         String expected = "blub";
@@ -39,7 +39,7 @@ public class FishTest{
 
 
     @Test
-    public void speakTest() {
+    public void speakTest2() {
         Fish fish = new Fish("fish");
         fish.setSpeak("blub blub");
 
